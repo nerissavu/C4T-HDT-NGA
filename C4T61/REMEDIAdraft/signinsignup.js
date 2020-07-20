@@ -25,19 +25,26 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
+
+const realsignUpButton = document.getElementById('realsignUp');
+realsignUpButton.addEventListener('submit',realsignUp );
+
+const realsignInButton = document.getElementById('realsignIn');
+realsignInButton.addEventListener('submit',realsignIn );
+
 function realsignUp(){
 
-  var name = document.getElementById("suname")
   var email= document.getElementById("suemail")
   var password = document.getElementById("supassword")
 
-  const promise = auth.createUserWithEmailAndPassword (name.value, email.value, password.value)
-  promise.catch(e => alert(e.message));
+  const promise = auth.createUserWithEmailAndPassword(email.value, password.value)
+  promise.then(res => console.log(res)).catch(e => alert(e.message));
 
   alert("Signed Up");
 }
 
 function realsignIn(){
+
   var email= document.getElementById("siemail")
   var password = document.getElementById("sipassword")
 
@@ -46,3 +53,4 @@ function realsignIn(){
 
   alert("Signed In" );
 }
+
