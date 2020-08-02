@@ -7,7 +7,7 @@ html,body{
 
 a{
     text-decoration: none;
-    color:#40E0D0; 
+    color:#21b9c4; 
 }
 
 .flex-row{
@@ -54,8 +54,14 @@ span{
 
 p{
     font-family: 'Abel', sans-serif;
-    color:white;
+    /* color:white; */
 }
+
+/* section{
+    padding: 10rem 0;
+    background-color: #fff
+} */
+
 
 /* --------------- navbar ----------------- */
 
@@ -140,9 +146,11 @@ p{
     color: #a1c4cf;
 }
 
+
+
 /*------- nav---------------*/
 
-/*------- MAIN SECTION---------------*/
+/*------- SITE TITLE---------------*/
 main .site-title{
     background: url('../assets/background3.jpg');
     background-size: cover;
@@ -175,20 +183,201 @@ main .site-title .btn:hover{
     border: 1px solid #ffffff;
     color: #ffffff;
 }
-/*------- MAIN CONTENT---------------*/
-/*------- STORIES---------------*/
+/*------- SITE TITLE---------------*/
 
-main .blog{
+/*------- OUR PROFILES---------------*/
+
+.heading{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 5rem;
+    text-align: center;
+    color: #333;
+    position: relative;
+}
+
+.heading::after{
+    content: "";
+    width: 10rem;
+    height: .8rem;
+    background-color: #45e19f;
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.card-wrapper{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction:column;
+}
+
+.card{
+    width: 20rem;
+    background-color: #ebeef8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0,0,0,0.2);
+}
+
+.card .card-img{
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+
+.profile-img{
+    width: 15rem;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: -10rem;
+    z-index: 999;
+    border: 1rem solid #ebeef8;
+}
+
+.card h1{
+    font-size: 2.5rem;
+    color: #333;
+    margin: 1.5rem 0;
+}
+
+.job-title{
+    color: #777;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.about{
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    text-align: center;
+    color: #333
+}
+
+.card .btn{
+    padding: 1rem 2.5rem;
+    background-color: #445ae3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #eee;
+    font-size: 1.4rem;
+    transition: all .5s;
+}
+
+.card .btn:hover{
+    transform: translate(-2px);
+    box-shadow: .5rem .5rem 2rem rgba(0,0,0,0.2);
+}
+
+.card .btn:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0,0,0,0.2)
+}
+
+.social-media i{
+    font-size: 3rem;
+    transition: color .5s;
+}
+
+.fa-facebook-square{
+    color: #3b5999
+}
+
+.fa-instagram-square{
+    color: #e6683c;
+}
+
+.fa-envelope-square{
+    color: #dd4b39;
+}
+
+.fa-facebook-square:hover,
+.fa-instagram-square:hover,
+.fa-envelope-square:hover{
+    color: #45e19f;
+}
+
+@media screen and (min-width: 700px){
+    .card-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        margin: 2rem;
+        transition: transform .5s;
+    }
+
+    @keyframes fadeIn {
+        from{
+            opacity: 0
+        }
+        to{
+            opacity: 1
+        }
+    }
+        .card:nth-child(1){
+            animation: fadeIn .5s .5s backwards;
+        }
+
+        .card:nth-child(2){
+            animation: fadeIn .5s 1s backwards;
+        }
+
+        .card:nth-child(3){
+            animation: fadeIn .5s 1.5s backwards;
+        }
+
+        .card:nth-child(4){
+            animation: fadeIn .5s 2s backwards;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+        }
+}
+
+
+/*------- OUR PROFILES---------------*/
+
+
+/*------- STORIES---------------*/
+main .blog{ 
     background: url(../assets/abstract1.png);
     background-repeat: no-repeat;
     background-position: right;
-    height: 400vh;
+    height: 150vh;
     width: 100%;
     background-size: 65%;
-}
+    background: transparent;
+
+} 
 
 main .blog .blog-post{
-    padding-top: 6rem;
+    padding-top: 6rem; 
 }
 
 main .blog-post .blog-content{
@@ -197,12 +386,146 @@ main .blog-post .blog-content{
     text-align: center;
     width: 80%;
     margin: 3rem 2rem;
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
+
 }
 
+main .blog-content .blog-title{
+    padding: 2rem 0;
+}
+
+main .blog-content .btn-blog{
+    padding: .7rem 2rem;
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);;
+    margin: .5rem;
+}
+
+main .blog-content span{
+    display: block;
+}
+
+section .container .owl-nav{
+    position: absolute;
+    top: 0%;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.owl-nav .owl-prev .owl-nav-prev,
+.owl-nav .owl-next .owl-nav-next{
+    color: #40E0D0;
+    background: transparent;
+    font-size: 2rem;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover{
+    background: transparent;
+    color: black;
+    outline: none;
+}
 
 /*------- STORIES---------------*/
 
+/*------- FACTS & INFOGRAPHIC---------------*/
+main .site-content{
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+main .post-content{
+    width: 100%;   
+}
+
+
+main .site-content .post-content > .post-image, .post-title{
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main .site-content .post-content > .post-image .post-info{
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0%;
+    left: 12vw;
+    border-radius: 3rem;
+}
+
+main .site-content .post-content > .post-image > div{
+    overflow: hidden;
+}
+
+main .site-content .post-content > .post-image .img{
+    width: 100%;
+    transition: all 1s ease;
+}
+
+main .site-content .post-content > .post-image .img:hover{
+    transform: scale(1.3);
+}
+
+main .site-content .post-content > .post-image .post-info span{
+    margin: 0 .5rem;
+}
+
+main .post-content .post-title a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+
+.site-content .post-content .post-title .post-btn{
+    border-radius: 0;
+    padding: .7rem 1.5rem;
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+}
+
+/*------- pagination---------------*/
+/* .site-content .pagination{
+    justify-content: center;
+    color: black;
+    margin: 4rem 0;
+}
+
+.site-content .pagination a{
+    padding: .6rem .9rem;
+    border-radius: 2rem;
+    margin: 0 .3rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.site-content .pagination .pages{
+    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+    color: white;
+} */
+
+/*------- pagination---------------*/
+
+/*------- infographics---------------*/
+
+.site-content .sidebar .popular-post .post-content{
+    padding: 20px 0 ;
+}
+
+/* .site-content .sidebar .popular-post h1{
+    padding-top: 10px;
+} */
+
+.site-content .sidebar .popular-post .post-info{
+    padding: 0.4rem 0.1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%) !important;
+    font-size: 0.8rem;
+}
+
+.site-content .sidebar .popular-post .post-title a{
+    font-size: 1rem;
+}
+/*------- infographics---------------*/
+
+
+/*------- FACTS & INFOGRAPHIC---------------*/
 
 /*------- FOOTER---------------*/
 footer.footer{
@@ -240,7 +563,7 @@ footer.footer .newsletter .form-element input{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
-    width: 77%;
+    width: 75%;
     outline: none;
 
 }
@@ -261,6 +584,15 @@ footer.footer .instagram div > img{
 footer.footer .follow div i{
     color: white;
     padding: 0 .4rem;
+}
+
+footer.footer .rights{
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer.footer .rights h4 a{
+    color: white;
 }
 
 footer.footer .move-up{
