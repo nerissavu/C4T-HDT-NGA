@@ -14,6 +14,7 @@ const responsive = {
 }
 
 $(document).ready(function () {
+   
 
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
@@ -40,7 +41,7 @@ $(document).ready(function () {
     // click to scroll down
     $('.move-down button').click(function () {
         $('html, body').animate({
-            scrollTop: 5200
+            scrollTop: 8000
         }, 15000);
     })
     

@@ -26,11 +26,24 @@ firebase.initializeApp(firebaseConfig);
 
 const auth = firebase.auth();
 
-const signUpForm = document.getElementById('signUpForm');
-signUpForm.addEventListener('submit',realsignUp );
 
-const signInForm = document.getElementById('signInForm');
-signInForm.addEventListener('submit',realsignIn );
+// const signUpForm = document.getElementById('signUpForm');
+// signUpForm.addEventListener('submit',realsignUp );
+document.getElementById('realsignIn').addEventListener('click',(e) => {
+  // console.log('HELLO');c
+  var email= document.getElementById("siemail")
+  var password = document.getElementById("sipassword")
+
+  const promise = auth.signInWithEmailAndPassword(email.value,password.value)
+  promise.then(res => {
+    console.log(res)
+    window.location.href = '../BLOG/blog.html'
+  })
+  .catch(e => alert(e.message));
+});
+
+
+
 
 function realsignUp(){
 
@@ -43,14 +56,18 @@ function realsignUp(){
   alert("Signed Up");
 }
 
-function realsignIn(){
 
-  var email= document.getElementById("siemail")
-  var password = document.getElementById("sipassword")
+const signInForm = document.getElementById('signInForm');
+signInForm.addEventListener('submit',realsignIn );
 
-  const promise = auth.signInWithEmailAndPassword(email.value,password.value)
-  promise.catch(e => alert(e.message));
+// function realsignIn(){
 
-  alert("Signed In" );
-}
+  
+ 
+  
+
+//   // alert("Signed In" );
+// }
+
+
 
