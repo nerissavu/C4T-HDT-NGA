@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/4aba3e29f1.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <title>Blog post 3</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href=".//css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./css/blogpost.css">
+
+</head>
+
+<style>
+    .posts h2,
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .posts h2 {
+        text-transform: uppercase;
+        line-height: 1.8;
+        text-align: center
+    }
+
+    time {
+        font: 700 1.0rem/1.2 "Poppins";
+        color: #20B2AA
+    }
+
+    .container li{
+        font: 700 1.0rem/1.2 "Poppins";    }
+</style>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div style="display:flex" class="nav-menu">
+            <div class="nav-brand" style="display:flex; align-items:center">
+                <a style="display: block; padding: 0px;"
+                    href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\blog.html"><img
+                        src="./assets/rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 80%;width: 100%;"></a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul style="padding: 0; " class="nav-items">
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ADVISORY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">FACTS & INFOGRAPHIC</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\REMEDIAstories\stories.html">SRORIES</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">DRUG LIBRARY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="../login/signinsignup.html" id="sign_in_btn">SIGN IN</a>
+                    </li>
+                    <li style="visibility: hidden;" class="nav-link">
+                        <a class="nav-letter" href="" id="log_out_btn">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION -->
+
+
+    <!-- MAIN SECTION -->
+    <!--SITE TITLE-->
+
+    <main>
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos data-aos-delay="500">
+                <h1>REMEDIA</h1>
+                <h3>DRUG ADVISORY AND DISTRIBUTION SERVICE</h3>
+                <div class="move-down">
+                    <button style="color: black;" class="btn"> EXPLORE </button>
+                </div>
+
+            </div>
+
+        </section>
+        <!--SITE TITLE-->
+
+        <!--FACTS & INFOGRAPHICs-->
+        <section class="container">
+            <div class="site-content">
+                <!--FACTS & VIDEO-->
+
+                <div class="posts">
+                    <h1 style="font-size: 50px;" class="heading">Stories</h1>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="400">
+
+                        <div class="post-title">
+                            <div class="article"></div>
+                            <h2><a class="title" href="https://www.mayoclinic.org/healthy-lifestyle/weight-loss/in-depth/weight-loss/art-20046409">Over-the-counter
+                                    weight-loss pills
+                                </a></h2>
+                            <br>
+                            <div>
+                                <time>FEBRUARY 6, 2018</time>
+                            </div>
+                            <br>
+                            <div class="post-image">
+                                <div>
+                                    <img src="assets/bp3.png" class="img" alt="blog1" width="100%">
+                                </div>
+                            </div>
+                            <p><i><b>The temptation to use over-the-counter weight-loss pills to lose weight fast is
+                                        strong. But are these products safe and effective?
+                                    </b></i></p>
+                            <p>The appeal of losing weight quickly is hard to resist. But do weight-loss pills and
+                                products lighten anything but your wallet? And are they safe?
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">Setting realistic expectations
+                                    </a></b></p>
+                            <p>
+                                There's no magic bullet for losing weight. The most effective way to lose weight and
+                                keep it off is by eating a healthy low-calorie diet and being more physically active.
+                            </p>
+                            <p>
+                                Weight-loss pills — prescription drugs, nonprescription drugs, herbal products or other
+                                dietary supplements — are all, at best, tools that may help with weight loss. But there
+                                is relatively little research about these products. The best studied of these are
+                                prescription weight-loss drugs.
+                            </p>
+                            <p>
+                                For example, a 2016 study reviewed 28 long-term trials of prescription drugs for
+                                treating obesity. The researchers concluded that when a person makes appropriate
+                                lifestyle changes, a prescription weight-loss drug increases the likelihood of achieving
+                                "clinically meaningful" weight loss within a year.
+                            </p>
+                            <p>
+                                Clinically meaningful weight loss means you've lost enough weight to lower your risk of
+                                heart disease, diabetes and other diseases. This is generally defined as 5 percent or
+                                more of body weight.
+
+                                It's important to consider that weight loss achieved in a research setting may be
+                                greater than in actual practice. Also, possible side effects and adverse reactions to
+                                weight-loss pills can affect how well you might do.
+                            </p>
+                            <p>It's reasonable to expect that prescription weight-loss pills may be beneficial, but they
+                                won't be magical. They don't work for everyone, and the benefits may be modest.
+                                Researchers know much less about the potential benefits and risks of over-the-counter
+                                weight-loss products.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">Understanding over-the-counter treatment
+                                        regulations
+                                    </a></b></p>
+                            <p>Over-the-counter weight-loss treatments fall into two general categories:
+                            </p>
+                            <p>
+                            <ul>
+                                <li>Nonprescription drugs </li>
+                                <li>Dietary supplements </li>
+                            </ul>
+                            </p>
+                            <p>The standards for regulating the production and marketing of these two types of
+                                treatments are different. For a nonprescription drug, such as orlistat (Alli), the drug
+                                company must provide the Food and Drug Administration (FDA) with results from human
+                                (clinical) trials that show the safety and effectiveness of the drug at the
+                                nonprescription dose.
+                            </p>
+                            <p>The makers of dietary supplements are responsible for ensuring the safety of their
+                                product and making honest claims about possible benefits. However, the makers' claims
+                                aren't subject to FDA review or approval before marketing. Also, the type or quality of
+                                research used to support claims can vary.
+                                If the FDA can demonstrate that a supplement is unsafe, the agency can ban the product
+                                or ask a manufacturer to withdraw it voluntarily. The FDA may also take action against a
+                                manufacturer if there is no evidence at all to support a claim.</p>
+                            <p>These differences in research, production and marketing can make it difficult to make
+                                informed decisions about products.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">Interpreting claims on weight-loss supplements
+                                    </a></b></p>
+                            <p>When a dietary supplement is marketed as "clinically proven" to cause weight loss, there
+                                should be some type of clinical evidence to support it. Such a claim, however, provides
+                                no details about the clinical research.
+                            </p>
+                            <p>For example, raspberry ketone supplements are marketed as clinically proven, natural
+                                weight-loss products. As of December 2017, the results of only one clinical trial with
+                                raspberry ketone had been published. The results include the following information:
+                            </p>
+                            <ul>
+                                <li>The eight-week trial used a multi-ingredient supplement with raspberry ketone,
+                                    caffeine, bitter orange, ginger root extract and garlic root extract, as well as
+                                    other herbs, vitamins and minerals.
+                                </li>
+                                <li>Seventy obese adults were randomly assigned to receive either the supplement or an
+                                    inactive ingredient (placebo).
+                                </li>
+                                <li>All of the participants were placed on a restricted diet and exercise program.
+                                </li>
+                                <li>Forty-five people completed all eight weeks of the trial.
+                                </li>
+                                <li>Among people completing the trial, the average weight loss in the supplement group
+                                    was 4.2 pounds (1.9 kilograms).
+                                </li>
+                                <li>The average weight loss in the placebo group was 0.9 pounds (0.4 kilograms).
+                                </li>
+                            </ul>
+                            <p>The weight loss in the treatment group was modest, and the trial was only eight weeks,
+                                which isn't long enough to know if the supplement will help with weight loss long term.
+                                Plus, the supplement included multiple ingredients, making it impossible to judge which
+                                ingredients helped the weight loss.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">Understanding over-the-counter treatment
+                                        regulations</a></b></p>
+                            <p>Limited research also makes it difficult to judge the safety of a weight-loss supplement.
+                                And a product isn't necessarily safe simply because it's natural. Though rare, some
+                                dietary supplements have been linked to serious problems, such as liver damage.
+                            </p>
+                            <p>Ephedra, or ma-huang, is an herbal stimulant once used in weight-loss products. It's now
+                                banned by the FDA because of possible adverse effects, including mood changes, high
+                                blood pressure, irregular heart rate, stroke, seizures and heart attacks.
+                            </p>
+                            <p>Bitter orange is a currently available herbal stimulant used in some weight-loss
+                                supplements and is often called an ephedra substitute. The active ingredient in bitter
+                                orange has chemical properties and actions that are similar to ephedra and may be
+                                associated with similar adverse effects. Because of limited research and the use of
+                                bitter orange in multi-ingredient supplements, the safety of the product isn't
+                                well-understood.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">Researching before you buy </a></b></p>
+                            <p>It's important to do your homework if you're thinking about trying over-the-counter
+                                weight-loss pills. Information about many dietary supplements is available online from
+                                the Office of Dietary Supplements and the National Center for Complementary and
+                                Integrative Health.
+                            </p>
+                            <p>The Natural Medicines database summarizes research regarding dietary supplements and
+                                herbal products. Although information from the Natural Medicines database is available
+                                only by subscription, you may be able to access it through a public library.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">Including your doctor in your weight-loss plans
+                                    </a></b></p>
+                            <p>If you're considering weight-loss pills, be sure to talk with your doctor, especially if
+                                you have health problems, take prescription drugs, or are pregnant or breast-feeding.
+                                It's also important to get advice on possible interactions with your current use of
+                                medicine, vitamins or minerals.
+
+                                Your doctor can also offer advice on losing weight, provide support, monitor your
+                                progress or refer you to a dietitian.
+
+                            </p>
+                            <p><b>By Mayo Clinics</b></p>
+
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+
+
+                </div>
+                <!--FACTS & VIDEO-->
+                <!--INFOGRAPHICS-->
+
+
+                <aside class="sidebar">
+                    <div class="popular-post">
+                        <h1 style="font-size: 50px;" class="heading">Popular Posts</h1>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/overdose.jpg" class="img" alt="info1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">More than 2,000 Australians a year dying from drug overdoses
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/supplement.jpg" class="img" alt="info2">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">Vietnamese pharmacy firms cash in on nutritional supplements,
+                                    brokers say </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/medicine.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">What We Learned in 2019: Health and Medicine</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/how.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">How Medicine Became the Stealth Family-Friendly Profession</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Newsletter</h2>
+                        <div class="form-element">
+                            <input type="text" class="input-element" placeholder="Email">
+                            <button class="btn form-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+
+        <!--FACTS AND INFOGRAPHICs-->
+    </main>
+
+    <!-- MAIN SECTION -->
+
+
+
+
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>About us</h2>
+                <p style="font-size: x-small; font-weight: bolder;"> Remedia is a platform where everyone from all over
+                    the world can have access to medical and pharmaceutical treatment along with education.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Newsletter</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span id="pointer"><i
+                            class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Instagram</h2>
+
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins1.jpg" alt="insta1" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins2.jpg" alt="insta2" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins3.jpg" alt="insta3" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Follow us</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Let us be Social</p>
+                <div class="nav-brand" style="display:flex; align-items:center">
+                    <img src="./assets/white-rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 100%;width: 100%;">
+                </div>
+                <div style="padding-top: 30px;">
+                    <a href="https://www.facebook.com/Remedia-111536797318273"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/RemediaV"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/remediavietnam/"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto: remediavietnam@gmai.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2020 All rights reserved | made by
+                <a href="https://www.facebook.com/Remedia-111536797318273" target="_black">REMEDIA TEAM <i
+                        id="last_icon" class="fab fa-facebook-square"></i>
+                </a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-chevron-circle-up"></i></span>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/jquerry.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>

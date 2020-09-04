@@ -19,7 +19,6 @@ var firebaseConfig = {
         const sign_in_btn = document.querySelector('#sign_in_btn');
         sign_in_btn.innerHTML = user.email
         // const nav_list = document.querySelector("nav_list")
-        // let 
         
         document.getElementById("log_out_btn").style.visibility = "visible";
 

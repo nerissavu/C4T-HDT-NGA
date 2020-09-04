@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <script src="https://kit.fontawesome.com/4aba3e29f1.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <title>blog post 5</title>
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href=".//css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="./css/blogpost.css" />
+</head>
+
+<style>
+    .posts h2,
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .posts h2 {
+        text-transform: uppercase;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    time {
+        font: 700 1rem/1.2 "Poppins";
+        color: #20b2aa;
+    }
+
+</style>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div style="display: flex" class="nav-menu">
+            <div class="nav-brand" style="display: flex; align-items: center">
+                <a style="display: block; padding: 0px"
+                    href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\blog.html"><img
+                        src="./assets/rectangle.png" class="text-gray" id="logo"
+                        style="margin: 0; height: 80%; width: 100%" /></a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul style="padding: 0" class="nav-items">
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ABOUT US</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ADVISORY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">FACTS & INFOGRAPHIC</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\REMEDIAstories\stories.html">SRORIES</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">DRUG LIBRARY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="../login/signinsignup.html" id="sign_in_btn">SIGN IN</a>
+                    </li>
+                    <li style="visibility: hidden" class="nav-link">
+                        <a class="nav-letter" href="" id="log_out_btn">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION -->
+
+    <!-- MAIN SECTION -->
+    <!--SITE TITLE-->
+
+    <main>
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos data-aos-delay="500">
+                <h1>REMEDIA</h1>
+                <h3>DRUG ADVISORY AND DISTRIBUTION SERVICE</h3>
+                <div class="move-down">
+                    <button style="color: black" class="btn">EXPLORE</button>
+                </div>
+            </div>
+        </section>
+        <!--SITE TITLE-->
+
+        <!--FACTS & INFOGRAPHICs-->
+        <section class="container">
+            <div class="site-content">
+                <!--FACTS & VIDEO-->
+
+                <div class="posts">
+                    <h1 style="font-size: 50px" class="heading">Stories</h1>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="post-title">
+                            <div class="article"></div>
+                            <h2><a class="title" href="https://www.theguardian.com/australia-news/2020/aug/31/more-than-2000-australians-a-year-dying-from-drug-overdoses">More than 2,000 Australians a year dying from drug overdoses
+                            </a></h2>
+                            <br />
+                            <div><time>AUGUST 31, 2020</time></div>
+                            <p><b>Report finds with most deaths unintentional and involve prescription medication
+                            </b></p>
+                            
+                            <div class="post-image">
+                                <div>
+                                    <img src="assets/bp5.jpg" class="img" alt="blog1" width="100%">
+                                </div>
+                            </div>
+                            
+                            <p><i>A report has revealed that 1,556 of 2,070 fatal drug overdoses in Australia in 2018 were unintentional. Photograph: Paul Braven/AAP
+                            </i></p>
+                            <p>More than 2,000 Australians are dying from drug overdoses every year and there is a clear upwards trend in deaths, according to researchers, with most deaths unintentional and involving prescription medication.
+                            </p>
+                            <p>
+                                Australia’s Annual Overdose Report shows that in 2018, 2,070 people fatally overdosed, with a majority of the deaths involving opioids, stimulants and the use of multiple substances at the same time.
+
+                            </p>
+                            <p>
+                                The report by independent health research unit the Penington Institute revealed that 1,556 of drug overdoses (75%) in 2018 were unintentional.
+
+                                It found 70% of victims were men and 400 more Australians died from an overdose than on the nation’s roads – and the gap was widening.
+
+                            </p>
+                            <p>
+                                The Penington Institute’s chief executive, John Ryan, said campaigning, investment in evidence-based policies and community education have done a great job of bringing down the road toll but “we must tackle our overdose crisis in the same way.”
+
+                            </p>
+                            <p>
+                                Overdose deaths cost the economy more than $13bn every year and the number of unintentional overdose deaths that involve four or more substances have almost quadrupled, he said.
+
+                            </p>
+                            <p>
+                                There is now a clear upward trend, with more than 2,000 Australians dying annually from overdoses for five consecutive years.
+
+                                “Overdose is our hidden health crisis – and it’s a crisis that is costing us billions. And what’s worse is these deaths are preventable. We simply can’t accept that 2,000 of our sons and daughters, mums and dads, and brothers and sisters die every year from a drug overdose.”
+                                                                                            </p>
+                            <div class="post-image">
+                                <div>
+                                    <img src="assets/bp5-2.jpg" class="img" alt="blog1" width="100%">
+                                </div>
+                            </div>                                                               
+                            <p><i>There were 1,612 unintentional drug overdose deaths in Australia in 2017 – or one death every 5.4 hours. Photograph: Doug Steley B/Alamy
+                            </i></p>
+                            <p>
+                                Ryan is calling on the commonwealth government to commit to a national overdose prevention strategy.
+
+                                “We want Australia’s Annual Overdose Report to encourage Australians from all walks of life to talk more about overdose and drug issues. That’s vital if we’re to bring this hidden crisis out of the shadows. The rich, middle and poor are all impacted by overdose,” he said .
+                                
+                                                            </p>
+                            <p>
+                                The report backs research by the National Drug and Alcohol Research Centre, showing heroin was once again the leading underlying opioid-induced accidental deaths.
+
+                                The CEO of Australian Injecting and Illicit Drug Users League, Melanie Walker, said there had also been an increase in deaths involving synthetic opioids like fentanyl and tramadol over the past decade.
+                                
+                                                            </p>
+                            <p>
+                                The country has projected beer production to rise to 4.1 billion liters in 2020, based on a Industry and Trade Ministry plan. 
+                            </p>
+                            <p><b>By The Guardian</b></p>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <!--FACTS & VIDEO-->
+                <!--INFOGRAPHICS-->
+
+                <aside class="sidebar">
+                    <div class="popular-post">
+                        <h1 style="font-size: 50px" class="heading">Popular Posts</h1>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/overdose.jpg" class="img" alt="info1" />
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">More than 2,000 Australians a year dying from drug
+                                    overdoses
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/supplement.jpg" class="img" alt="info2" />
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">Vietnamese pharmacy firms cash in on nutritional
+                                    supplements, brokers say
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/medicine.jpg" class="img" alt="info3" />
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">What We Learned in 2019: Health and Medicine</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/how.jpg" class="img" alt="info3" />
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white"><i class="fas fa-calendar-alt"></i>&nbsp;&nbsp;January
+                                        14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="#">How Medicine Became the Stealth Family-Friendly
+                                    Profession</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                        <h2>Newsletter</h2>
+                        <div class="form-element">
+                            <input type="text" class="input-element" placeholder="Email" />
+                            <button class="btn form-btn">Subscribe</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!--FACTS AND INFOGRAPHICs-->
+    </main>
+
+    <!-- MAIN SECTION -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>About us</h2>
+                <p style="font-size: x-small; font-weight: bolder;"> Remedia is a platform where everyone from all over
+                    the world can have access to medical and pharmaceutical treatment along with education.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Newsletter</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span id="pointer"><i
+                            class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Instagram</h2>
+
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins1.jpg" alt="insta1" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins2.jpg" alt="insta2" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins3.jpg" alt="insta3" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Follow us</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Let us be Social</p>
+                <div class="nav-brand" style="display:flex; align-items:center">
+                    <img src="./assets/white-rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 100%;width: 100%;">
+                </div>
+                <div style="padding-top: 30px;">
+                    <a href="https://www.facebook.com/Remedia-111536797318273"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/RemediaV"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/remediavietnam/"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto: remediavietnam@gmai.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2020 All rights reserved | made by
+                <a href="https://www.facebook.com/Remedia-111536797318273" target="_black">REMEDIA TEAM <i
+                        id="last_icon" class="fab fa-facebook-square"></i>
+                </a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-chevron-circle-up"></i></span>
+        </div>
+    </footer>
+
+    <script src="./js/jquerry.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>

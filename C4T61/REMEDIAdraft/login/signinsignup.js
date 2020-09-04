@@ -38,27 +38,38 @@ document.getElementById('realsignIn').addEventListener('click',(e) => {
   promise.then(res => {
     console.log(res)
     window.location.href = '../BLOG/blog.html'
+    localStorage.setItem('name','Nga')
   })
   .catch(e => alert(e.message));
 });
 
 
 
-
-function realsignUp(){
-
+document.getElementById('realsignUp').addEventListener('click',(e) => {
   var email= document.getElementById("suemail")
   var password = document.getElementById("supassword")
 
   const promise = auth.createUserWithEmailAndPassword(email.value, password.value)
   promise.then(res => console.log(res)).catch(e => alert(e.message));
-
   alert("Signed Up");
-}
+
+});
 
 
-const signInForm = document.getElementById('signInForm');
-signInForm.addEventListener('submit',realsignIn );
+// function realsignUp(){
+
+//   var email= document.getElementById("suemail")
+//   var password = document.getElementById("supassword")
+
+//   const promise = auth.createUserWithEmailAndPassword(email.value, password.value)
+//   promise.then(res => console.log(res)).catch(e => alert(e.message));
+
+//   alert("Signed Up");
+// }
+
+
+// const signInForm = document.getElementById('signInForm');
+// signInForm.addEventListener('submit',realsignIn );
 
 // function realsignIn(){
 
