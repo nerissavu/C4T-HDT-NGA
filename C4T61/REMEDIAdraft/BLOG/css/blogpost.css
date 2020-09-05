@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@900&display=swap');
 html,body{
     padding: 0;
     border: 0;
@@ -221,6 +223,52 @@ main .site-title .btn:hover{
     background: transparent;
     border: 1px solid #ffffff;
     color: #ffffff;
+}
+
+/* ------------add------------- */
+
+.content-background {
+    display: flex;
+    min-height: 100vh;
+    background: url(../bg-wave.png) center no-repeat;
+    width: 100%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 100px ;
+}
+
+.content-background h2
+{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    font-size: 7em;
+    top: 190px;
+    justify-content: center;
+    align-items: center;
+    left: 750px;
+    font-family: 'Arima Madurai', cursive;
+    }
+
+
+.content-background h2:nth-child(1) {
+	color: transparent;
+	-webkit-text-stroke: 2px navy;
+}
+.content-background h2:nth-child(2) {
+	color: navy;
+	animation: wave 3s ease-in-out infinite;
+}
+@keyframes wave {
+	0%,100% 
+	{
+		clip-path: polygon(0 42%, 13% 48%, 26% 55%, 41% 64%, 56% 65%, 69% 58%, 84% 45%, 100% 38%, 100% 100%, 0% 100%);
+	}
+	50%
+	{
+		clip-path: polygon(0 63%, 14% 57%, 25% 50%, 40% 42%, 56% 40%, 71% 44%, 84% 50%, 100% 60%, 100% 100%, 0% 100%);
+	}
 }
 /*------- SITE TITLE---------------*/
 

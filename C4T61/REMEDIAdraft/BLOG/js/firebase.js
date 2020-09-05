@@ -12,29 +12,31 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   
   const auth = firebase.auth();
-  auth.onAuthStateChanged((user) => {
-    if (user) {
+  var email = localStorage.getItem('email');
+  console.log(email);
+  // auth.onAuthStateChanged((user) => {
+    if (email) {
         //  console.log(user);
         // User logged in already or has just logged in.
-        console.log(user.email);
+        // console.log(user.email);
         const sign_in_btn = document.querySelector('#sign_in_btn');
-        sign_in_btn.innerHTML = user.email
+        sign_in_btn.innerHTML = email
         // const nav_list = document.querySelector("nav_list")
         
         document.getElementById("log_out_btn").style.visibility = "visible";
 
 
         const signOutForm = document.getElementById('log_out_btn');
-        signOutForm.addEventListener('click',logout() );
+        signOutForm.addEventListener('click',() => {
+          firebase.auth().signOut().then(function () {
+            // Sign-out successful.
+              console.log("sign out")
+              localStorage.clear();  
+          }).catch(function (error) {
+           // An error happened.
+                           });
+        } );
     
-        function logout(){
-            firebase.auth().signOut().then(function () {
-                   // Sign-out successful.
-                     console.log("sign out")
-                 }).catch(function (error) {
-                  // An error happened.
-                                  });
-            }
         
     } else {
         // User not logged in or has just logged out.
@@ -43,6 +45,6 @@ var firebaseConfig = {
 
     }
     
-    });
+    // });
 
     

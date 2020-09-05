@@ -36,7 +36,7 @@ document.getElementById('realsignIn').addEventListener('click',(e) => {
 
   const promise = auth.signInWithEmailAndPassword(email.value,password.value)
   promise.then(res => {
-    console.log(res)
+    localStorage.setItem('email',email.value);
     window.location.href = '../BLOG/blog.html'
     // localStorage.setItem('name','Nga')
   })
