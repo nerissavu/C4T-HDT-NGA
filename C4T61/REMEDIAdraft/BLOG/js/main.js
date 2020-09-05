@@ -41,8 +41,8 @@ $(document).ready(function () {
     // click to scroll down
     $('.move-down button').click(function () {
         $('html, body').animate({
-            scrollTop: 8100
-        }, 25000);
+            scrollTop: 8550
+        }, 15000);
     })
     
     // click to scroll top
