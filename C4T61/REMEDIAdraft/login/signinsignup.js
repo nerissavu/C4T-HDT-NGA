@@ -38,7 +38,7 @@ document.getElementById('realsignIn').addEventListener('click',(e) => {
   promise.then(res => {
     console.log(res)
     window.location.href = '../BLOG/blog.html'
-    localStorage.setItem('name','Nga')
+    // localStorage.setItem('name','Nga')
   })
   .catch(e => alert(e.message));
 });

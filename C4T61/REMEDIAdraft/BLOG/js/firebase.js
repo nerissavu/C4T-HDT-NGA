@@ -14,6 +14,7 @@ var firebaseConfig = {
   const auth = firebase.auth();
   auth.onAuthStateChanged((user) => {
     if (user) {
+        //  console.log(user);
         // User logged in already or has just logged in.
         console.log(user.email);
         const sign_in_btn = document.querySelector('#sign_in_btn');
@@ -37,7 +38,7 @@ var firebaseConfig = {
         
     } else {
         // User not logged in or has just logged out.
-        console.log("null")
+        console.log("khong co user!")
         // document.getElementById("log_out_btn").style.visibility = "hidden";
 
     }

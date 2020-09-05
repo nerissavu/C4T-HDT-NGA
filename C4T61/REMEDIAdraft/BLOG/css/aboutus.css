@@ -525,7 +525,7 @@ main .site-title .btn:hover{
     
     .mission{
     width: 100%;
-    height: 70vh;
+    height: 55vh;
     background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); 
     background-size: cover;
     position: absolute;
