@@ -22,6 +22,9 @@ ul{
     list-style-type: none;
 }
 
+li{
+    list-style-type: none;
+}
 h1{
     font-family:'Abel', sans-serif; 
     font-size: 2.5rem;
@@ -158,11 +161,11 @@ span{
     font-size: 0.7rem;
 }
 
-.nav .nav-items .nav-link:hover{
+.active, .nav .nav-items .nav-link:hover{
     background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); 
 }
 
-.nav .nav-items .nav-link:hover a{
+.active, .nav .nav-items .nav-link:hover a{
     color: white;
 }
 
@@ -311,7 +314,15 @@ main .post-content .post-title a{
 }
 
 .site-content .pagination .pages{
-    background-image: linear-gradient(60deg, #96deda 0%, #50c9c3 100%);
+    background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); 
+    color: white;
+}
+
+.active, .pagination .pagination_items:hover{
+    background-image:black; 
+}
+
+.active, .pagination .pagination_items:hover a{
     color: white;
 }
 

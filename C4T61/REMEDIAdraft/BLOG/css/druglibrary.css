@@ -7,7 +7,6 @@ html,body{
 }
 
 
-
 a{
     text-decoration: none;
    
@@ -24,16 +23,16 @@ ul{
 }
 
 h1{
-    font-family: 'Montserrat', sans-serif; 
+    font-family:'Abel', sans-serif; 
     font-size: 2.5rem;
 }
 
 h2{
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Abel', sans-serif ;
 }
 
 h3{
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Abel', sans-serif ;
     font-size: 1.3rem;
 }
 
@@ -61,15 +60,24 @@ p{
     /* color:white; */
 }
 
+span{
+
+}
+/* section{
+    padding: 10rem 0;
+    background-color: #fff
+} */
 
 .heading{
+    /* text-transform: uppercase; */
     font-size: 2.5rem;
+    /* letter-spacing: 1px; */
     margin-right: -3px;
     margin-bottom: 3rem;
     text-align: center;
     position: relative;
     padding-top: 4rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family:'Abel', sans-serif; 
 
 }
 
@@ -226,186 +234,38 @@ main .site-title .btn:hover{
 }
 /*------- SITE TITLE---------------*/
 
-/*---------------CONTENT----------------*/
-.content
+/* .library
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-.video, .facts
-{
-display: flex;
-justify-content: center;
-align-items: center;
-background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);;
-min-height: 100vh;
-background-size: cover;
-padding-top: 100px;
-padding-bottom: 200px;
-}
-
-.content .container
-{
-    position: relative;
-    width: 1000px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px;
-}
-
-.container .card
-{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-			0 10px 10px rgba(0,0,0,0.22);
-    position: relative;
-    height: 250px;
-    background: #fff;
-    display: flex;
-    width: 45%;
-    margin: 30px 0;
-}
-
-.container .card .imgBx
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;    
-    z-index: 1;
-    display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
-
-.container .card:hover .imgBx
-{
-    width: 150px;
-    height: 150px;
-    left: -75px;
-    top: calc(50% - 75px);
-    transition: 0.5s ease-in-out;
-}
-
-.container .card .imgBx:before
-{
-    content: attr(data-text);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    font-size: 15px;
-    color: rgba(255,255,255, .05);
-    font-weight: 700;
-}
-
-.container .card .imgBx iframe
-{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    height: 100%;
-    width: 100%;
-    transition: 0.5s ease-in-out;
-}
-
-.container .card:hover .imgBx iframe
-{
-    width: 100%;
-}
-
-.container .card .content
-{
-    position: absolute;
-    right: 0;
-    width: calc(100% - 75px);
-    height: 100%;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.container .card .content h3
-{
-    margin-bottom: 5px;
-    font-size: 17px;
-}
-
-.container .card .content p
-{
-    font-size: 14px;
-}
-
-.container .card .content a
-{
-    display: inline-block;
-    margin-top: 10px;
-    padding: 5px 10px;
-    background: #333;
-    text-decoration: none;
-    color: #fff;
-}
-
-.video::before{
-    content: "";
-    position: absolute;
-    top: 1750px;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background: url("../assets/wave-large-reversed.png") center no-repeat;
-    background-size: cover;
-}
-
-/* .wave-1
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-bottom: -1218px;
-    margin-top: 0px;
 } */
 
-.wave-2
-{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    margin-bottom: -2200px;
-    margin-top: 0px;
-}
-
-
-/*----This is infographics section----*/
-
-.gallery
+.art
 {
 display: flex;
+background: #ffffff;
+width: 100%;
 justify-content: center;
 align-items: center;
 background: white;
-min-height: 50vh;
+min-height: 100vh;
+justify-items: center;
 }
+
 
 .gallery
 {
     margin: 10px 50px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .gallery img
 {
+    justify-items: center;
     padding: 5px;
     filter: grayscale(100%);
     transition: 1s;
@@ -417,97 +277,200 @@ min-height: 50vh;
     transform: scale(1.1);
 }
 
+/* This is drug book */
 
-/*----This is facts section----*/
+.drugbook_heading{
+    text-transform: uppercase;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-right: -3px;
+    margin-bottom: 0rem;
+    text-align: center;
+    color: white;
+    position: relative;
+}
 
-.container .card .imgBx img
-{
-    position: absolute;
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+} */
+
+.special{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+}
+
+.drugbook_container{
+    position: relative;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.drugbook_container .card{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.drugbook_container .card:hover{
+    height: 500px;
+}
+
+/* .contain .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
     left: 0px;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+} */
+
+.drugbook_container .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 260px;
+}
+
+.drugbook_container .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.drugbook_container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 30px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.drugbook_container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+
+.drug-book::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: url("../assets/wave-large-reversed.png") center no-repeat;
+    background-size: cover;
+    top: 2050px;
+}
+
+
+
+/* This is request form */
+
+/* .map{
+    box-sizing: border-box;
+}
+
+.map{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background: white;
+}
+
+.contact-in{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-radius: 10px;
+    background: #333;
+    box-shadow: 0px 0px 10px 0px #666;
+}
+
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe{
+    width: 100%;
     height: 100%;
-    width: 100%;
-    transition: 0.5s ease-in-out;
 }
 
-.container .card:hover .imgBx img
+.contact-form{
+width: 100%;
+height: auto;
+flex: 50%;
+text-align: center;
+}
+
+.contact-form h1{
+   margin-bottom: 10px; 
+   color: white;
+}
+
+.contact-form-txt{
+    width: 90%;
+    height: 30px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 10px;}
+
+.contact-form-textarea{
+    width: 90%;
+    height: 130px;
+    color: #000;
+    border: 1px solid #bcbcbc;
+    border-radius: 20px;
+    outline: none;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.contact-form-textarea::placeholder,
+.contact-form-txt::placeholder
 {
-    width: 100%;
+    color: #aaa;
 }
 
-/*----This is responsive----*/
-
-@media (max-width: 992px)
-{
-    .container
-    {
-        width: 100%;
-        flex-direction: column;
-        align-items: center;
-    }
-    .container .card
-    {
-        width: 400px
-    }
-
-    .wave
-    {
-        width: 100%;
-    }
-}
-
-@media (max-width: 768px)
-{
-    .container .card
-    {
-        max-width: 300px;
-        flex-direction: column;
-        height: auto;
-    }
-    .container .card .imgBx
-    {
-        position: relative;
-    }
-    .container .card .imgBx,
-    .container .card:hover .imgBx
-    {
-        width: 100%;
-        height: 200px;
-        left: 0
-    }
-    .container .card .imgBx iframe,
-    .container .card:hover .imgBx iframe
-    {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        height: 100%;
-        width: 100%;
-    }
-    .container .card .imgBx img,
-    .container .card:hover .imgBx img
-    {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        height: 100%;
-        width: 100%;
-    }
-    .container .card .content
-    {
-        position: relative;
-        width: 100%;
-    }
-}
-
-
-
+.contact-form-btn{
+    width: 30%;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px 0;
+    cursor: pointer;
+    font-size: 18px;
+} */
 /*------- FOOTER---------------*/
 footer.footer{
     height: 100%;
@@ -552,12 +515,8 @@ footer.footer .newsletter .form-element input{
 
 footer.footer .newsletter .form-element span{
     background:linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
-    padding: 0.5rem 0.67rem;
+    padding: 0.5rem 0.5rem;
     cursor: pointer;
-}
-
-#pointer{
-    padding-right: 12px;
 }
 
 footer.footer .instagram div > img{

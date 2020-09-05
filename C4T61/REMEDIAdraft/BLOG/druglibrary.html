@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4aba3e29f1.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <title>Drug Library</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href=".//css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./css/druglibrary.css">
+
+</head>
+
+<style>
+
+    /* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+    body{
+        font-family: 'Poppins', sans-serif;
+    ;
+    } */
+    
+    
+    .game_card{
+        position: relative;
+        height: 450px;
+        width: 900px;
+        margin: 200px auto;
+        background: #fff;
+        box-shadow: 7px 7px 50px 0px rgba(0, 0, 0, .7);
+    }
+    
+    .thumbnail{
+        float: left;
+        position: relative;
+        left: 30px;
+        top: -30px;
+        height: 320px;
+        width: 530px;
+        box-shadow: 8px 8px 50px 0px rgba(0, 0, 0, .7);
+        overflow: hidden;
+    
+    }
+    .img.left{
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        height: 100%;
+        height:100%
+    }
+    
+    .right{
+        margin-left: 590px;
+        margin-right: 20px;
+    }
+    .name{
+        padding-top: 15px;
+        font-size: 1.3rem;
+        color: #4b4b4b;
+    }
+    .author {
+        background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); 
+        height: 30px;
+        width: 130px;
+        border-radius: 20px;
+    }
+    
+    .author> img{
+        padding-top: 5px;
+        margin-left: 10px;
+        float: left;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+    }
+    
+    .author_name{
+        padding-top: 8px;
+        margin-right: 6px;
+        text-align: right;
+        font-size: .5rem;
+        color: white;
+    }
+    
+    .game_content{
+        text-align: justify;
+        padding-top: 10px;
+        font-size: 0.95rem;
+        line-height: 150%;
+        color:#4b4b4b
+    }
+    .date{
+        position: absolute;
+        left:30px;
+        bottom:-80px;
+        font-size: 3rem;
+        color: #c3c3c3;
+    }
+    .month{
+        position: absolute;
+        left:30px;
+        bottom:-40px;
+        font-size: 1rem;
+        color: #c3c3c3;
+    }
+    
+    .arrow{
+        position: absolute;
+        right: 50px;
+        bottom: -30px;
+        padding-top: 14px;
+        background-image: linear-gradient(to right, #3ab5b0 0%, #3d99be 31%, #56317a 100%); 
+        width: 60px;
+        height: 60px;
+        font-size: 12px;
+        color: #fff;
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, .7);
+        box-sizing: border-box;
+    
+    }
+    </style>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div style="display:flex" class="nav-menu">
+            <div class="nav-brand" style="display:flex; align-items:center">
+                <a style="display: block; padding: 0px;"
+                    href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\blog.html"><img
+                        src="./assets/rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 80%;width: 100%;"></a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul style="padding: 0; " class="nav-items">
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ADVISORY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="./factandinfo.html">FACTS & INFOGRAPHIC</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\stories.html">SRORIES</a>
+                    </li>
+                    <li class="nav-link active" >
+                        <a style="color: white;" class="nav-letter" href="druglibrary.html">DRUG LIBRARY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="../login/signinsignup.html" id="sign_in_btn">SIGN IN</a>
+                    </li>
+                    <li style="visibility: hidden;" class="nav-link">
+                        <a class="nav-letter" href="" id="log_out_btn">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="social text-gray">
+                <a href="https://www.facebook.com/Remedia-111536797318273"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div> -->
+        </div>
+    </nav>
+    <!-- NAVIGATION -->
+
+
+    <!-- MAIN SECTION -->
+    <!--SITE TITLE-->
+
+    <main>
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos data-aos-delay="500">
+                <h1>REMEDIA</h1>
+                <h3>DRUG ADVISORY AND DISTRIBUTION SERVICE</h3>
+                <div class="move-down">
+                    <button style="color: black;" class="btn"> EXPLORE </button>
+                </div>
+
+            </div>
+
+        </section>
+        <!--SITE TITLE-->
+        <div class="library">
+            <h1 class="heading">Medical art magazine</h1>
+            <section class="art">
+                <div class="gallery">
+                    <div style="display: flex; justify-content: space-evenly;">
+                        <img src="./assets/art/red drug.jpg" width="500px" height="300px">
+                        <img src="./assets/art/cannabis-2.png" width="500px" height="300px">
+                    </div>
+                    <div>
+                        <img src="./assets/art/just-art.png" width="500px" height="300px">
+                        <img src="./assets/art/naloxone-2.png" width="500px" height="300px">
+                    </div>
+                    <div>
+                        <img src="./assets/art/4-drugs.png" width="500px" height="300px">
+                        <img src="./assets/art/ramadan-2.png" width="500px" height="300px">
+                    </div>
+
+
+                </div>
+            </section>
+            <h1 class="heading"> Drug Shelves</h1>
+
+            <div class="special">
+                <section class="drug-book">
+                    <section class="allergy">
+                        <h1 style="padding-top:150px" class="drugbook_heading">Allergy</h1>
+                        <div class="drugbook_container">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/loratadine.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Loratadine</h2>
+                                    <p>Loratadine is used to treat sneezing, runny nose, watery eyes, hives, skin rash,
+                                        itching,
+                                        and other cold or allergy symptoms.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/acthar.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Acthar</h2>
+                                    <p>Acthar is used for many health problems like allergy signs, asthma, adrenal gland
+                                        problems, blood problems, skin rashes, or swelling problems. </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/benadryl.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Benadryl</h2>
+                                    <p>Benadryl is used to treat sneezing, runny nose, watery eyes, hives, skin rash,
+                                        itching,
+                                        and other cold or allergy symptoms.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="cold-flu">
+                        <h1 class="drugbook_heading">Cold and Flu</h1>
+                        <div class="drugbook_container">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/nyquil.jpeg">
+                                </div>
+                                <div class="content">
+                                    <h2>NyQuil D</h2>
+                                    <p>NyQuil D is a medicine used to treat headache, fever, body aches, cough,
+                                        runny nose, sneezing caused by the common cold, or the flu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/coricidin.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Coricidin</h2>
+                                    <p>Coricidin is used to treat headache, runny nose, sneezing, watery eyes, and pain
+                                        or fever
+                                        caused by allergies, the common cold, or the flu.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/triaminic.png">
+                                </div>
+                                <div class="content">
+                                    <h2>Triaminic</h2>
+                                    <p>Triaminic Allergy is used to treat runny nose, sneezing, itching, and watery eyes
+                                        caused
+                                        by allergies, the common cold, or the flu.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section class="acne">
+                        <h1 class="drugbook_heading">Acne</h1>
+                        <div class="drugbook_container">
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/Doxycycline.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Doxycycline</h2>
+                                    <p>Doxycycline is used to treat many different bacterial infections, such as acne,
+                                        urinary
+                                        tract
+                                        infections, intestinal infections, respiratory infections, and others.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/tretinoin.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Tretinoin</h2>
+                                    <p>Tretinoin (for the skin) is used to treat acne, to smooth rough facial skin, and
+                                        to
+                                        reduce the appearance of fine wrinkles and mottled skin discoloration.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="imgBx">
+                                    <img src="./assets/Epiduo.jpg">
+                                </div>
+                                <div class="content">
+                                    <h2>Epiduo</h2>
+                                    <p>Epiduo gel is used to treat acne vulgaris (severe acne) in people who are at
+                                        least 9
+                                        years old.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </section>
+            </div>
+            <!-- <section class="map">
+                <div class="contact-in">
+                    <div class="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6200597842403!2d105.7992473143966!3d21.007861886009692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad15a3789c51%3A0xa1b9661a09fd952d!2zTWluZFggc2Nob29sIEhvw6BuZyDEkOG6oW8gVGjDunk!5e0!3m2!1svi!2s!4v1599253491232!5m2!1svi!2s"
+                            width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <div class="contact-form">
+                        <h1>Drug Distribution Request Form</h1>
+                        <form action="https://formspree.io/xwkrgkwo" method="POST">
+                            <input type="text" placeholder="Email" class="contact-form-txt" name="email">
+                            <input type="text" placeholder="Address" class="contact-form-txt" name="address">
+                            <textarea placeholder="Message" class="contact-form-textarea" name="message"></textarea>
+                            <button type="submit" class="contact-form-btn">SUBMIT</button>
+                        </form>
+                    </div>
+                </div>
+            </section> -->
+
+            <h1 class="heading"> Games & Quizs</h1>
+
+            <div class="game_card">
+                <div class="thumbnail">
+                    <img src="./assets/background3.jpg" class="left">
+                </div>
+                <div class="right">
+                    <h1 class="name">Remedia Game </h1>
+                    <div class="author">
+                        <img src="./assets/icon_200x200.png" alt="">
+                        <h2 class="author_name">Remedia Team</h2>
+                    </div>
+                    <div class="seperator">
+                    </div>
+                    <p class="game_content">
+                        In this quiz, you have to answer 5 questions about medicine. Good luckff
+                        In this quiz, you have to answer 5 questions about medicine. Good luckff
+        
+                        </p>
+                </div>
+                <h5 class="date">20</h5>
+                <h6 class="month">January</h6>
+         
+                <div class="arrow">
+                    <li style="display: inline;   list-style: none; font-size: 30px;"><a style="color: white;" href="#" ><i class="fas fa-arrow-right"></i></a></li>
+        
+                </div>
+        
+            </div>
+            <div class="game_card">
+                <div class="thumbnail">
+                    <img src="./assets/background3.jpg" class="left">
+                </div>
+                <div class="right">
+                    <h1 class="name">Remedia Quiz </h1>
+                    <div class="author">
+                        <img src="./assets/icon_200x200.png" alt="">
+                        <h2 class="author_name">Remedia Team</h2>
+                    </div>
+                    <div class="seperator">
+                    </div>
+                    <p class="game_content">
+                        In this quiz, you have to answer 5 questions about medicine. Good luck
+                        In this quiz, you have to answer 5 questions about medicine. Good luck
+        
+                        </p>
+                </div>
+                <h5 class="date">20</h5>
+                <h6 class="month">January</h6>
+         
+                <div class="arrow">
+                    <li style="display: inline;   list-style: none; font-size: 30px;"><a style="color: white;" href="./start.html"><i class="fas fa-arrow-right"></i></a></li>
+        
+                </div>
+        
+            </div>
+        </div>
+   
+
+        <!--FACTS AND INFOGRAPHICs-->
+    </main>
+
+    <!-- MAIN SECTION -->
+
+
+
+
+
+    <!--FOOTER-->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>About us</h2>
+                <p style="font-size: x-small; font-weight: bolder;">Remedia is a platform where everyone from all over
+                    the world can have access to medical and pharmaceutical treatment along with education.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Newsletter</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Instagram</h2>
+
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins1.jpg" alt="insta1" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins2.jpg" alt="insta2" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins3.jpg" alt="insta3" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Follow us</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Let us be Social</p>
+                <div class="nav-brand" style="display:flex; align-items:center">
+                    <img src="./assets/white-rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 100%;width: 100%;">
+                </div>
+                <div style="padding-top: 30px;">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2020 All rights reserved | made by
+                <a href="https://www.facebook.com/Remedia-111536797318273" target="_black">REMEDIA TEAM <i
+                        id="last_icon" class="fab fa-facebook-square"></i>
+                </a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-chevron-circle-up"></i></span>
+        </div>
+    </footer>
+ 
+
+
+    <script src="./js/jquerry.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>

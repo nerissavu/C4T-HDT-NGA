@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4aba3e29f1.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <title>Blog post 2</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href=".//css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="./css/blogpost.css">
+
+</head>
+
+<style>
+    .posts h2,
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .posts h2 {
+        text-transform: uppercase;
+        line-height: 1.8;
+        text-align: center
+    }
+
+    time {
+        font: 700 1.0rem/1.2 "Poppins";
+        color: #20B2AA
+    }
+</style>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div style="display:flex" class="nav-menu">
+            <div class="nav-brand" style="display:flex; align-items:center">
+                <a style="display: block; padding: 0px;"
+                    href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\blog.html"><img
+                        src="./assets/rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 80%;width: 100%;"></a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul style="padding: 0; " class="nav-items">
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ADVISORY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="./factandinfo.html">FACTS & INFOGRAPHIC</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\stories.html">SRORIES</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="./druglibrary.html">DRUG LIBRARY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="../login/signinsignup.html" id="sign_in_btn">SIGN IN</a>
+                    </li>
+                    <li style="visibility: hidden;" class="nav-link">
+                        <a class="nav-letter" href="" id="log_out_btn">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION -->
+
+
+    <!-- MAIN SECTION -->
+    <!--SITE TITLE-->
+
+    <main>
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos data-aos-delay="500">
+                <h1>REMEDIA</h1>
+                <h3>DRUG ADVISORY AND DISTRIBUTION SERVICE</h3>
+                <div class="move-down">
+                    <button style="color: black;" class="btn"> EXPLORE </button>
+                </div>
+
+            </div>
+
+        </section>
+        <!--SITE TITLE-->
+
+        <!--FACTS & INFOGRAPHICs-->
+        <section class="container">
+            <div class="site-content">
+                <!--FACTS & VIDEO-->
+
+                <div class="posts">
+                    <h1 style="font-size: 50px;" class="heading">Stories</h1>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="400">
+
+                        <div class="post-title">
+                            <div class="article"></div>
+                            <h2>
+                                <a class="title" href="https://www.washingtonpost.com/nation/2019/12/23/pills-fentanyl-three-personal-stories-that-show-how-opioid-crisis-evolved/
+                        ">From pills to fentanyl: Three personal stories that show how the opioid crisis evolved
+                                </a>
+                            </h2>
+                            <br>
+                            <div>
+                                <time>DECEMBER 23, 2019 | 07:30 pm GMT+7</time>
+                            </div>
+                            <br>
+                            <p>Three drugs are responsible for creating the deadly U.S. opioid epidemic: prescription
+                                pain pills, heroin and fentanyl. As of 2018, the crisis had claimed more than 400,000
+                                lives.
+                            </p>
+                            <p>
+                                Yet the faces of some victims remain hidden. Grieving families embarrassed by the stigma
+                                of drug abuse write “passed peacefully at home” in obituaries. Recovering addicts meet
+                                anonymously.
+                            </p>
+                            <p>
+                                The Washington Post spoke with families and friends of more than 70 victims that span
+                                the epidemic. Here are some of their stories, remembered through the lens of their
+                                families.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">The first wave: Prescription pills</a></b></p>
+                            <br>
+                            <p><i>
+                                    Overdose deaths from prescription drug abuse began to surge in the 1990s as usage
+                                    expanded, with the advent of new philosophies about pain management and
+                                    more-aggressive marketing techniques by drug companies. By 2011, more than 115,000
+                                    Americans had died.
+                                </i></p>
+                            <div>
+                                <img src="assets/bp2-2.jpeg" class="img" alt="blog1" width="100%">
+                            </div>
+                            <p><i>Dominic Rosa, left, and his brother Vincent. Both died of overdoses within a year of
+                                    each other. (Family photo)
+                                </i></p>
+                            <p>Dominic Rosa was 6 years old when he first tried out for hockey in 1989. He didn’t have
+                                the proper equipment and padding, so he looked smaller than the other players,
+                                remembered his father, Charles Rosa, 60. Dominic grasped onto the sides of the rink with
+                                his mittens, trying not to fall over. Charles thought about hauling him out of the
+                                arena. But another father told him to wait it out.
+
+                                Dominic wasn’t a quitter, though. He went on to play as a forward for more than 10
+                                years, becoming a co-captain of the Peabody High School team and getting picked for the
+                                regional all-star team. But he couldn’t beat opioids.
+                            <p>
+                                “Now, a lot of the people that my sons grew up with are struggling,” Charles said. “It’s
+                                unbelievable how many of those kids are dead or struggling.”
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.2rem navy">The second wave: Heroin </a></b></p>
+
+                            <p><i>
+                                    From 2011 to 2014, as deaths from prescription pills plateaued, heroin — a cheaper
+                                    alternative to pills — began to flood communities across the country, killing over
+                                    29,500 people.
+                                </i></p>
+                            <div class="post-image">
+                                <div>
+                                    <img src="assets/bp2-1.jpg" class="img" alt="blog1" width="100%">
+                                </div>
+                            </div>
+                            <p><i>Eric Pavona with his four sisters at the graduation of his sister Kristin from
+                                    Michigan State University. (Family photo)
+                                </i></p>
+                            <p>
+                                Eric Pavona was an honors student. He got a 32 on his ACT. He worked two jobs in high
+                                school, saving enough money to buy a used, silver 2005 Mustang. He was studying to be a
+                                pharmacist.
+                            </p>
+                            <p>
+                                Then, around 2008, he became addicted to heroin. “He turned into a totally different
+                                human being, like a Martian,” said his father, Phil Pavona, 62, who is a retired
+                                hospital administrative director.
+
+                                Eric accrued debt, he dropped out of college, he lied. </p>
+                            <p>
+                                At first, Phil was clueless. Spoons would go missing from their kitchen and Phil would
+                                wonder whether someone was throwing them out.
+
+                                It wasn’t until Phil went to the courthouse after Eric told him he had a ticket that he
+                                found out Eric actually had a drug charge. That began a 2½-year battle within the
+                                family.
+
+                            </p>
+                            <p>Phil felt adrift. They were a middle-class family in Lansing, Mich. He didn’t feel like
+                                there was anyone else in their community who could relate.
+                                “I watched the news,” Phil said. “It wasn’t in the news.”
+                                After being released from jail, Eric overdosed but survived. Three people released with
+                                Eric had overdosed and died shortly afterward. A clerk at the jail told Phil he was
+                                lucky.
+                                “I didn’t feel lucky,” Phil said. “It was disheartening. I remember saying to her, ‘But
+                                why didn’t you warn us?’ ”
+                                Phil said he didn’t realize addicts tend to quickly relapse after being released. He
+                                thought his son would want to go home, relax and watch TV.
+                            </p>
+                            <p>On Aug. 12, 2011, Eric was released from jail again. Two weeks later, he died. He was 25.
+
+                            </p>
+
+                            <p><b><a style="box-shadow: 0 0.2rem navy">The third wave: Fentanyl
+                                    </a></b></p>
+
+                            <p><i>
+                                    Since 2013, fentanyl, which is 50 times the strength of heroin, has overtaken
+                                    prescription pills and heroin as the leading cause of overdose deaths among
+                                    Americans, killing more than 100,000.
+                                </i></p>
+                            <div class="post-image">
+                                <div>
+                                    <img src="assets/bp2-3.jpeg" class="img" alt="blog1" width="100%">
+                                </div>
+                            </div>
+                            <p><i>Leighann Rose McCoy with her partner, Bobby Brady, and Ashton, one of their four
+                                    children. (Family photo)
+                                </i></p>
+                            <p>
+                                Starting in 2015, people on the Cherokee reservation in western North Carolina were
+                                dying, and Kallup McCoy worried for his sister.
+
+                                Kallup had entered recovery after getting out of jail for a drug-related charge in 2017.
+                                His sister, Leighann Rose McCoy, was in the throes of her opioid addiction. Kallup
+                                called her repeatedly, telling her to get help before she made her four children
+                                motherless. “She finally stopped answering my calls,” he said.
+
+                            </p>
+                            <p>Kallup said he and Leighann grew up surrounded by a drug culture. Several family members
+                                were marijuana and cocaine dealers.
+
+                                “It was so normalized,” he said.
+
+                                Although Kallup and Leighann had used marijuana, he said, they became addicted to harder
+                                drugs only after they were given pain medication. He first tried opioids in 1998 when he
+                                was given Stadol, a brand of the morphine-like opioid butorphanol, for migraines.
+
+                                She was treated with Percocet, which contains oxycodone, for scoliosis after leaving the
+                                Navy in 2007.
+
+                            </p>
+                            <p>Her opioid addiction lasted 12 years. In March, Leighann, 39, overdosed on fentanyl. She
+                                had used her per capita disbursements from the tribe’s casino to buy the drugs. Kallup
+                                said many people use that money to buy drugs on the reservation.
+
+                                “Our tribe is very blessed and fortunate, but also it seems to give a sense of
+                                entitlement to our people,” Kallup said.
+
+                            </p>
+                            <p>Her opioid addiction lasted 12 years. In March, Leighann, 39, overdosed on fentanyl. She
+                                had used her per capita disbursements from the tribe’s casino to buy the drugs. Kallup
+                                said many people use that money to buy drugs on the reservation.
+
+                                “Our tribe is very blessed and fortunate, but also it seems to give a sense of
+                                entitlement to our people,” Kallup said.
+
+                            </p>
+                            <p><b>By Meryl Kornfield/The Washington Post</b></p>
+
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+
+
+                </div>
+                <!--FACTS & VIDEO-->
+                <!--INFOGRAPHICS-->
+
+                <aside class="sidebar">
+                    <div class="popular-post">
+                        <h1 style="font-size: 50px;" class="heading">Popular Posts</h1>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/overdose.jpg" class="img" alt="info1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="More_than_2000 Australian.html">More than 2,000 Australians a year dying from drug overdoses
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400"> 
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/supplement.jpg" class="img" alt="info2">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="Vietnamese_pharmacy_firms.html">Vietnamese pharmacy firms cash in on nutritional supplements, brokers say                  </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/medicine.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="What_we_learn_in_2019.html">What We Learned in 2019: Health and Medicine</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/how.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="How_medicine_become.html">How Medicine Became the Stealth Family-Friendly Profession</a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                    <h2>Newsletter</h2>
+                    <div class="form-element">
+                        <input type="text" class="input-element" placeholder="Email">
+                        <button class="btn form-btn">Subscribe</button>
+                    </div>
+                </div>
+                </aside>
+            </div>
+        </section>
+
+
+        <!--FACTS AND INFOGRAPHICs-->
+    </main>
+
+    <!-- MAIN SECTION -->
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>About us</h2>
+                <p style="font-size: x-small; font-weight: bolder;"> Remedia is a platform where everyone from all over
+                    the world can have access to medical and pharmaceutical treatment along with education.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Newsletter</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span id="pointer"><i
+                            class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Instagram</h2>
+
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins1.jpg" alt="insta1" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins2.jpg" alt="insta2" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins3.jpg" alt="insta3" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Follow us</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Let us be Social</p>
+                <div class="nav-brand" style="display:flex; align-items:center">
+                    <img src="./assets/white-rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 100%;width: 100%;">
+                </div>
+                <div style="padding-top: 30px;">
+                    <a href="https://www.facebook.com/Remedia-111536797318273"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/RemediaV"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/remediavietnam/"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto: remediavietnam@gmai.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2020 All rights reserved | made by
+                <a href="https://www.facebook.com/Remedia-111536797318273" target="_black">REMEDIA TEAM <i
+                        id="last_icon" class="fab fa-facebook-square"></i>
+                </a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-chevron-circle-up"></i></span>
+        </div>
+    </footer>
+
+
+
+    <script src="./js/jquerry.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>

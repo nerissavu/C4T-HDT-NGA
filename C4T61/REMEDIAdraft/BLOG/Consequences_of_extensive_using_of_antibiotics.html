@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4aba3e29f1.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <title>blog post 7</title>
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href=".//css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="./css/blogpost.css" />
+</head>
+
+<style>
+    .posts h2,
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .posts h2 {
+        text-transform: uppercase;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    time {
+        font: 700 1rem/1.2 "Poppins";
+        color: #20b2aa;
+    }
+</style>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div style="display: flex" class="nav-menu">
+            <div class="nav-brand" style="display: flex; align-items: center">
+                <a style="display: block; padding: 0px"
+                    href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\blog.html"><img
+                        src="./assets/rectangle.png" class="text-gray" id="logo"
+                        style="margin: 0; height: 80%; width: 100%" /></a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul style="padding: 0; " class="nav-items">
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ADVISORY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="./factandinfo.html">FACTS & INFOGRAPHIC</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\stories.html">SRORIES</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="./druglibrary.html">DRUG LIBRARY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="../login/signinsignup.html" id="sign_in_btn">SIGN IN</a>
+                    </li>
+                    <li style="visibility: hidden;" class="nav-link">
+                        <a class="nav-letter" href="" id="log_out_btn">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION -->
+
+    <!-- MAIN SECTION -->
+    <!--SITE TITLE-->
+
+    <main>
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos data-aos-delay="500">
+                <h1>REMEDIA</h1>
+                <h3>DRUG ADVISORY AND DISTRIBUTION SERVICE</h3>
+                <div class="move-down">
+                    <button style="color: black" class="btn">EXPLORE</button>
+                </div>
+            </div>
+        </section>
+        <!--SITE TITLE-->
+
+        <!--FACTS & INFOGRAPHICs-->
+        <section class="container">
+            <div class="site-content">
+                <!--FACTS & VIDEO-->
+
+                <div class="posts">
+                    <h1 style="font-size: 50px" class="heading">Stories</h1>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="post-title">
+                            <div class="article"></div>
+                            <h2><a class="title" href="https://www.mayoclinic.org/healthy-lifestyle/consumer-health/in-depth/antibiotics/art-20045720">Consequences of extensive using of antibiotics
+
+                            </a></h2>
+                            <br />
+                            <div>
+                                <time>DECEMBER 26, 2019</time>
+                            </div>
+                            <p><i><b>Find out how overuse of antibiotics has increased the number of
+                                        medication-resistant germs — and what you can do to help stop this health
+                                        threat.
+                                    </b></i></p>
+                            <div class="post-image">
+                                <div>
+                                    <img src="assets/bp-7.png" class="img" alt="blog1" width="100%">
+                                </div>
+                            </div>
+                            
+                            <p>Antibiotics are important medications. It would be difficult to overstate the benefits of
+                                penicillin and other antibiotics in treating bacterial infections, preventing the spread
+                                of disease and reducing serious complications of disease.
+                            </p>
+                            <p>But some medications that used to be standard treatments for bacterial infections are now
+                                less effective or don't work at all. When an antibiotic no longer has an effect on a
+                                certain strain of bacteria, those bacteria are said to be antibiotic resistant.
+                                Antibiotic resistance is one of the world's most pressing health problems.
+                            </p>
+                            <p>The overuse and misuse of antibiotics are key factors contributing to antibiotic
+                                resistance. The general public, doctors and hospitals all play a role in ensuring proper
+                                use of the medications and minimizing the development of antibiotic resistance.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.4rem navy">What causes antibiotic resistance?
+                                    </a></b></p>
+                            <p>
+                                A bacterium resists a medication when the bacterium has changed in some way. The change
+                                either protects the bacterium from the action of the medication or neutralizes the
+                                medication.
+                            </p>
+                            <p>
+                                Any bacterium that survives an antibiotic treatment can multiply and pass on its
+                                resistant properties. Also, some bacteria can transfer their medication-resistant
+                                properties to other bacteria — as if passing along a cheat sheet to help each other
+                                survive.
+                            </p>
+                            <p>
+                                The fact that bacteria develop resistance to a medication is normal and expected. But
+                                the way that medications are used affects how quickly and to what extent resistance
+                                occurs.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.4rem navy">Overuse of antibiotics
+                                    </a></b></p>
+                            <p>The overuse of antibiotics — especially taking antibiotics even when they're not the
+                                appropriate treatment — promotes antibiotic resistance. According to the Centers for
+                                Disease Control and Prevention, up to one-third to one-half of antibiotic use in humans
+                                is unnecessary or inappropriate.
+                            </p>
+                            <p>Other common viral infections that don't benefit from antibiotic treatment include:
+                            </p>
+                            <p>
+                            <ul>
+                                <li>Cold </li>
+                                <li>Flu (influenza) </li>
+                                <li>Bronchitis</li>
+                                <li>Most coughs</li>
+                                <li>Some ear infections</li>
+                                <li>Some sinus infections</li>
+                                <li>Stomach flu</li>
+                            </ul>
+                            </p>
+                            <p>If you take an antibiotic when you actually have a viral infection, the antibiotic
+                                attacks bacteria in your body — bacteria that are either beneficial or at least not
+                                causing disease. This misdirected treatment can then promote antibiotic-resistant
+                                properties in harmless bacteria that can be shared with other bacteria, or create an
+                                opportunity for potentially harmful bacteria to replace the harmless ones.
+                            </p>
+                            <p><b><a style="box-shadow: 0 0.4rem navy">Taking antibiotics responsibly
+                                    </a></b></p>
+                            <p>It's tempting to stop taking an antibiotic as soon as you feel better. But the full
+                                treatment is necessary to kill the disease-causing bacteria. Failure to take an
+                                antibiotic as prescribed can result in the need to resume treatment later and may
+                                promote the spread of antibiotic-resistant properties among harmful bacteria.
+                            <p><b><a style="box-shadow: 0 0.4rem navy">Consequences of antibiotic resistance
+                                    </a></b></p>
+                            <p>For many years, the introduction of new antibiotics outpaced the development of
+                                antibiotic resistance. In recent years, however, the pace of medication resistance has
+                                contributed to an increasing number of health care problems.
+
+                                Approximately 2 million infections from antibiotic-resistant bacteria occur in the
+                                United States each year, resulting in 23,000 deaths.
+                            </p>
+                            <p>Other consequences of medication-resistant infections include:
+                            </p>
+                            <p>
+                            <ul>
+                                <li>More-serious illness
+                                </li>
+                                <li>Longer recovery</li>
+                                <li>More-frequent or longer hospitalization
+                                </li>
+                                <li>More doctor visits</li>
+                                <li>More-expensive treatments</li>
+                            </ul>
+                            </p>
+
+                            <p><b>By Mayo Clinics</b></p>
+
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <!--FACTS & VIDEO-->
+                <!--INFOGRAPHICS-->
+
+                <aside class="sidebar">
+                    <div class="popular-post">
+                        <h1 style="font-size: 50px;" class="heading">Popular Posts</h1>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/overdose.jpg" class="img" alt="info1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="More_than_2000 Australian.html">More than 2,000 Australians a year dying from drug overdoses
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400"> 
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/supplement.jpg" class="img" alt="info2">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="Vietnamese_pharmacy_firms.html">Vietnamese pharmacy firms cash in on nutritional supplements, brokers say                  </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/medicine.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="What_we_learn_in_2019.html">What We Learned in 2019: Health and Medicine</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/how.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="How_medicine_become.html">How Medicine Became the Stealth Family-Friendly Profession</a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                    <h2>Newsletter</h2>
+                    <div class="form-element">
+                        <input type="text" class="input-element" placeholder="Email">
+                        <button class="btn form-btn">Subscribe</button>
+                    </div>
+                </div>
+                </aside>
+            </div>
+        </section>
+
+        <!--FACTS AND INFOGRAPHICs-->
+    </main>
+
+    <!-- MAIN SECTION -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>About us</h2>
+                <p style="font-size: x-small; font-weight: bolder;"> Remedia is a platform where everyone from all over
+                    the world can have access to medical and pharmaceutical treatment along with education.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Newsletter</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span id="pointer"><i
+                            class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Instagram</h2>
+
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins1.jpg" alt="insta1" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins2.jpg" alt="insta2" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins3.jpg" alt="insta3" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Follow us</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Let us be Social</p>
+                <div class="nav-brand" style="display:flex; align-items:center">
+                    <img src="./assets/white-rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 100%;width: 100%;">
+                </div>
+                <div style="padding-top: 30px;">
+                    <a href="https://www.facebook.com/Remedia-111536797318273"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/RemediaV"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/remediavietnam/"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto: remediavietnam@gmai.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2020 All rights reserved | made by
+                <a href="https://www.facebook.com/Remedia-111536797318273" target="_black">REMEDIA TEAM <i
+                        id="last_icon" class="fab fa-facebook-square"></i>
+                </a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-chevron-circle-up"></i></span>
+        </div>
+    </footer>
+
+    <script src="./js/jquerry.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>

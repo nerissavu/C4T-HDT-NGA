@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/4aba3e29f1.js" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <title>blog post 1</title>
+    <link rel="stylesheet" href="./css/all.css" />
+    <link rel="stylesheet" href=".//css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="./css/blogpost.css" />
+</head>
+
+<style>
+    .posts h2,
+    p {
+        margin-bottom: 1rem;
+    }
+
+    .posts h2 {
+        text-transform: uppercase;
+        line-height: 1.8;
+        text-align: center;
+    }
+
+    time {
+        font: 700 1rem/1.2 "Poppins";
+        color: #20b2aa;
+    }
+</style>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div style="display: flex" class="nav-menu">
+            <div class="nav-brand" style="display: flex; align-items: center">
+                <a style="display: block; padding: 0px"
+                    href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\blog.html"><img
+                        src="./assets/rectangle.png" class="text-gray" id="logo"
+                        style="margin: 0; height: 80%; width: 100%" /></a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul style="padding: 0; " class="nav-items">
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\aboutus.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="#">ADVISORY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="./factandinfo.html">FACTS & INFOGRAPHIC</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter"
+                            href="C:\Users\FR\Desktop\CODING\C4T\C4T61\REMEDIAdraft\BLOG\stories.html">SRORIES</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="druglibrary.html">DRUG LIBRARY</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-letter" href="../login/signinsignup.html" id="sign_in_btn">SIGN IN</a>
+                    </li>
+                    <li style="visibility: hidden;" class="nav-link">
+                        <a class="nav-letter" href="" id="log_out_btn">SIGN OUT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVIGATION -->
+
+    <!-- MAIN SECTION -->
+    <!--SITE TITLE-->
+
+    <main>
+        <section class="site-title">
+            <div class="site-background" data-aos="fade-up" data-aos data-aos-delay="500">
+                <h1>REMEDIA</h1>
+                <h3>DRUG ADVISORY AND DISTRIBUTION SERVICE</h3>
+                <div class="move-down">
+                    <button style="color: black" class="btn">EXPLORE</button>
+                </div>
+            </div>
+        </section>
+        <!--SITE TITLE-->
+
+        <!--FACTS & INFOGRAPHICs-->
+        <section class="container">
+            <div class="site-content">
+                <!--FACTS & VIDEO-->
+
+                <div class="posts">
+                    <h1 style="font-size: 50px" class="heading">Stories</h1>
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="post-title">
+                            <div class="article"></div>
+                            <h2>
+                                <a class="title"
+                                    href=https://www.nytimes.com/2020/06/04/health/coronavirus-antibiotics-drugs.html>Doctors
+                                    Heavily Overprescribed Antibiotics Early in the Pandemic
+                                </a>
+                            </h2>
+                            <br />
+                            <div>
+                                <time datetime="12-01-20018">DECEMBER 1, 2018 | 02:00 pm GMT+7</time>
+                            </div>
+                            <br>
+                            <p>
+                                Now they are using lessons from the experience to urge action on the growing problem of
+                                drug-resistant infections before it’s too late.
+                            </p>
+                            <div class="post-image">
+                                <div>
+                                    <img src="assets/story1.jpg" class="img" alt="blog1" width="100%" />
+                                </div>
+                            </div>
+                            <p>
+                                The desperately ill patients who deluged the emergency room at Detroit Medical Center in
+                                March and April exhibited the telltale symptoms of the coronavirus: high fevers and
+                                infection-riddled lungs that left them gasping for air.
+                                <br>
+                                With few treatment options, doctors turned to a familiar intervention: broad-spectrum
+                                antibiotics, the shot-in-the-dark medications often used against bacterial infections
+                                that cannot be immediately identified. They knew antibiotics are not effective against
+                                viruses, but they were desperate, and they feared the patients could be vulnerable to
+                                life-threatening secondary bacterial infections as well.
+                                <br>
+                                “During the peak surge, our antibiotic use was off the charts,” said Dr. Teena Chopra,
+                                the hospital’s director of epidemiology and antibiotic stewardship, who estimated that
+                                more than 80 percent of arriving patients were given antimicrobial drugs. “At one point,
+                                we were afraid we would run out.”
+                                <br>
+                                Dr. Chopra said the doctors, and others across the country who liberally dispensed
+                                antibiotics in the early weeks of the pandemic, soon realized their mistake.
+                            </p>
+                            <p>
+                                “Many physicians were inappropriately giving antibiotics because, honestly, they had
+                                limited choices,” she said.
+                                <br>
+                                Now that the initial, terrifying flood of patients in hard-hit cities has subsided,
+                                doctors across the United States are seeking to draw lessons from their overuse of
+                                antibiotics, a practice that can spur resistance to the lifesaving drugs as bacteria
+                                mutate and outsmart the drugs.
+                            </p>
+                            <p>
+                                Many critically ill patients on ventilators have developed serious secondary infections.
+                                But widespread fears that coronavirus patients were especially susceptible to
+                                drug-resistant infections — a concern first described in studies from China — appear to
+                                have been misguided, according to interviews with researchers and more than a dozen
+                                doctors who have been treating patients with Covid-19.
+                                <br>
+                                “The fears turned out to be overblown,” said Dr. Bruce Farber, the chief of infectious
+                                diseases at Northwell Health, which has cared for thousands of coronavirus patients at
+                                its 23 hospitals in New York.
+                                <br>
+                                For many doctors, the pandemic not only provides lessons about the judicious use of
+                                antibiotics, but it also highlights another global health threat that has been playing
+                                out in slow motion: the mounting threat of antimicrobial resistance that annually claims
+                                700,000 lives as the world’s arsenal of antibiotics and antifungal medication lose their
+                                ability to vanquish dangerous pathogens.
+                            </p>
+                            <p>
+                                In recent weeks, doctors, researchers and public health experts have been trying to turn
+                                the pandemic into a teaching moment. They warn that the same governmental inaction that
+                                helped foster the rapid, worldwide spread of the coronavirus may spur an even deadlier
+                                epidemic of drug-resistant infections that the United Nations suggests may kill 10
+                                million by 2050 if serious action isn’t taken.
+                            </p>
+
+                            <p><b>By Andrew Jacobs/ The New York Times</b></p>
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                </div>
+                <!--FACTS & VIDEO-->
+                <!--INFOGRAPHICS-->
+
+                <aside class="sidebar">
+                    <div class="popular-post">
+                        <h1 style="font-size: 50px;" class="heading">Popular Posts</h1>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/overdose.jpg" class="img" alt="info1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="More_than_2000 Australian.html">More than 2,000 Australians a year dying from drug overdoses
+                                </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400"> 
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/supplement.jpg" class="img" alt="info2">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="Vietnamese_pharmacy_firms.html">Vietnamese pharmacy firms cash in on nutritional supplements, brokers say                  </a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/medicine.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="What_we_learn_in_2019.html">What We Learned in 2019: Health and Medicine</a>
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/how.jpg" class="img" alt="info3">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span style="color: white;"><i class="fas fa-calendar-alt "></i>&nbsp;&nbsp;January 14,2019</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a class="title" href="How_medicine_become.html">How Medicine Became the Stealth Family-Friendly Profession</a>
+                            </div>
+                        </div>
+                   </div>
+                   <div class="newsletter" data-aos="fade-up" data-aos-delay="300">
+                    <h2>Newsletter</h2>
+                    <div class="form-element">
+                        <input type="text" class="input-element" placeholder="Email">
+                        <button class="btn form-btn">Subscribe</button>
+                    </div>
+                </div>
+                </aside>
+            </div>
+        </section>
+
+        <!--FACTS AND INFOGRAPHICs-->
+    </main>
+
+    <!-- MAIN SECTION -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>About us</h2>
+                <p style="font-size: x-small; font-weight: bolder;"> Remedia is a platform where everyone from all over
+                    the world can have access to medical and pharmaceutical treatment along with education.</p>
+            </div>
+            <div class="newsletter" data-aos="fade-right" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Newsletter</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Stay update with our latest</p>
+                <div class="form-element">
+                    <input type="text" placeholder="Email"><span id="pointer"><i
+                            class="fas fa-chevron-right"></i></span>
+                </div>
+            </div>
+            <div class="instagram" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Instagram</h2>
+
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins1.jpg" alt="insta1" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins2.jpg" alt="insta2" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins3.jpg" alt="insta3" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+                <div class="flex-row">
+                    <img src="./assets/ins4.jpg" alt="insta4" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins5.jpg" alt="insta5" style="width:2.5rem; height: 2.5rem; ">
+                    <img src="./assets/ins6.jpg" alt="insta6" style="width:2.5rem; height: 2.5rem; ">
+                </div>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200"
+                style="display:flex; flex-direction:column; align-items:center;">
+                <h2>Follow us</h2>
+                <p style=" font-size: x-small; font-weight: bolder">Let us be Social</p>
+                <div class="nav-brand" style="display:flex; align-items:center">
+                    <img src="./assets/white-rectangle.png" class="text-gray" id="logo"
+                        style="margin:0;height: 100%;width: 100%;">
+                </div>
+                <div style="padding-top: 30px;">
+                    <a href="https://www.facebook.com/Remedia-111536797318273"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/RemediaV"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/remediavietnam/"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto: remediavietnam@gmai.com"><i class="far fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright ©2020 All rights reserved | made by
+                <a href="https://www.facebook.com/Remedia-111536797318273" target="_black">REMEDIA TEAM <i
+                        id="last_icon" class="fab fa-facebook-square"></i>
+                </a>
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-chevron-circle-up"></i></span>
+        </div>
+    </footer>
+
+    <script src="./js/jquerry.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/firebase.js"></script>
+</body>
+
+</html>
