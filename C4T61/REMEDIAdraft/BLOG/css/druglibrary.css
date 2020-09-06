@@ -25,16 +25,16 @@ ul{
 }
 
 h1{
-    font-family:'Abel', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
 }
 
 h2{
-    font-family:'Abel', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h3{
-    font-family:'Abel', sans-serif ;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1.3rem;
 }
 
@@ -426,7 +426,7 @@ justify-items: center;
     height: 120px;
     background: url("../assets/wave-large-reversed.png") center no-repeat;
     background-size: cover;
-    top: 2300px;
+    top: 2250px;
 }
 
 
